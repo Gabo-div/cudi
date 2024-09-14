@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="container mx-auto mb-40 flex min-h-screen max-w-6xl items-center px-4"
+      className="container mx-auto mb-40 flex min-h-screen max-w-6xl items-center px-2 py-32"
     >
-      <div className="flex w-full">
-        <div className="flex w-1/2 flex-col p-4">
+      <div className="flex w-full flex-wrap">
+        <div className="flex w-full flex-col p-4 lg:w-1/2">
           <h1 className="mb-4 text-6xl font-bold">Nosotros</h1>
           <p className="leading-loose">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
@@ -20,8 +20,8 @@ export default function About() {
             aliquet, sem ut cursus luctus, ipsum leo
           </p>
         </div>
-        <div className="flex w-1/2 flex-col p-4">
-          <div className="rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">
+        <div className="flex w-full flex-col p-4 lg:w-1/2">
+          <div className="mx-auto rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">
             <img
               src={aboutImage.src}
               alt="About"

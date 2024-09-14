@@ -4,7 +4,7 @@ import Citium from "../svg/citium";
 export default function Hero() {
   return (
     <section id="home" className="relative">
-      <div className="hero-height container mx-auto mb-40 flex max-w-6xl items-center justify-center px-4">
+      <div className="hero-height container mx-auto flex max-w-6xl items-center justify-center px-4">
         <div className="flex w-full -translate-y-20 flex-col items-center">
           <div className="flex w-full justify-center overflow-hidden">
             <Logo className="size-96 translate-y-20 fill-white" />

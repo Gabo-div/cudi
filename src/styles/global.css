@@ -6,6 +6,11 @@ body {
   @apply bg-neutral-950 text-neutral-50;
 }
 
+.hero-height {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

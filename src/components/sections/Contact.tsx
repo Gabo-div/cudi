@@ -1,12 +1,18 @@
 import aboutImage from "@/assets/about.jpeg";
 
-export default function About() {
+export default function Contact() {
   return (
-    <section
-      id="about"
-      className="container mx-auto mb-40 flex min-h-screen max-w-6xl items-center px-4"
-    >
+    <div className="container mx-auto flex min-h-screen max-w-6xl items-center px-4">
       <div className="flex w-full">
+        <div className="flex w-1/2 flex-col p-4">
+          <div className="rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">
+            <img
+              src={aboutImage.src}
+              alt="About"
+              className="drop-shadow-[16px 16px 10px black)] rounded-lg mix-blend-multiply grayscale"
+            />
+          </div>
+        </div>
         <div className="flex w-1/2 flex-col p-4">
           <h1 className="mb-4 text-6xl font-bold">Nosotros</h1>
           <p className="leading-loose">
@@ -20,16 +26,7 @@ export default function About() {
             aliquet, sem ut cursus luctus, ipsum leo
           </p>
         </div>
-        <div className="flex w-1/2 flex-col p-4">
-          <div className="rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">
-            <img
-              src={aboutImage.src}
-              alt="About"
-              className="drop-shadow-[16px 16px 10px black)] rounded-lg mix-blend-multiply grayscale"
-            />
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
   );
 }

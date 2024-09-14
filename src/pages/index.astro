@@ -1,9 +1,11 @@
 ---
 import "@/styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import PointerGradient from "@/components/PointerGradient";
 import Hero from "@/components/sections/Hero";
 import Navbar from "@/components/sections/Navbar";
 import About from "@/components/sections/About";
+import Footer from "@/components/sections/Footer";
 ---
 
 <Layout>
@@ -12,8 +14,12 @@ import About from "@/components/sections/About";
       class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
+    <PointerGradient client:load />
     <Navbar />
     <Hero />
     <About />
+    <About />
+    <About />
+    <Footer />
   </main>
 </Layout>

@@ -1,29 +1,29 @@
 export default function Navbar() {
   return (
-    <nav className="absolute left-0 top-0 flex w-full">
-      <div className="container mx-auto max-w-2xl px-4 py-4">
-        <div className="flex h-12 items-center justify-center overflow-hidden rounded-full border border-zinc-700 bg-zinc-900">
+    <nav className="fixed left-0 top-0 z-10 flex w-full">
+      <div className="container mx-auto max-w-2xl px-2 py-2">
+        <div className="flex h-12 items-center justify-center overflow-hidden rounded-full border border-neutral-700 bg-neutral-950/50 backdrop-blur">
           <a
-            href="#"
-            className="flex h-full flex-1 items-center justify-center bg-zinc-900 px-4 text-white hover:bg-zinc-800"
+            href="#home"
+            className="flex h-full flex-1 items-center justify-center px-4 text-sm text-white hover:bg-chetwode-800/10 md:text-base"
           >
-            Home
+            Inicio
+          </a>
+          <a
+            href="#about"
+            className="flex h-full flex-1 items-center justify-center px-4 text-sm text-white hover:bg-chetwode-800/10 md:text-base"
+          >
+            Nosotros
           </a>
           <a
             href="#"
-            className="flex h-full flex-1 items-center justify-center bg-zinc-900 px-4 text-white hover:bg-zinc-800"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="flex h-full flex-1 items-center justify-center bg-zinc-900 px-4 text-white hover:bg-zinc-800"
+            className="flex h-full flex-1 items-center justify-center px-4 text-sm text-white hover:bg-chetwode-800/10 md:text-base"
           >
             Contact
           </a>
           <a
             href="#"
-            className="flex h-full flex-1 items-center justify-center bg-zinc-900 px-4 text-white hover:bg-zinc-800"
+            className="flex h-full flex-1 items-center justify-center px-4 text-sm text-white hover:bg-chetwode-800/10 md:text-base"
           >
             Contact
           </a>

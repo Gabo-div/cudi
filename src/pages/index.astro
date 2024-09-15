@@ -6,6 +6,9 @@ import Hero from "@/components/sections/Hero";
 import Navbar from "@/components/sections/Navbar";
 import About from "@/components/sections/About";
 import Footer from "@/components/sections/Footer";
+
+import { Image } from "astro:assets";
+import aboutImage from "@/assets/about.jpeg";
 ---
 
 <Layout>
@@ -17,9 +20,13 @@ import Footer from "@/components/sections/Footer";
     <PointerGradient client:load />
     <Navbar />
     <Hero />
-    <About />
-    <About />
-    <About />
+    <About>
+      <Image
+        src={aboutImage}
+        alt="About"
+        class="drop-shadow-[16px 16px 10px black)] rounded-lg mix-blend-multiply grayscale"
+      />
+    </About>
     <Footer />
   </main>
 </Layout>

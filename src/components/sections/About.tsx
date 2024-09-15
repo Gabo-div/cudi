@@ -1,6 +1,8 @@
-import aboutImage from "@/assets/about.jpeg";
+type Props = {
+  children: React.ReactNode;
+};
 
-export default function About() {
+export default function About({ children }: Props) {
   return (
     <section
       id="about"
@@ -22,11 +24,7 @@ export default function About() {
         </div>
         <div className="flex w-full flex-col p-4 lg:w-1/2">
           <div className="mx-auto rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">
-            <img
-              src={aboutImage.src}
-              alt="About"
-              className="drop-shadow-[16px 16px 10px black)] rounded-lg mix-blend-multiply grayscale"
-            />
+            {children}
           </div>
         </div>
       </div>

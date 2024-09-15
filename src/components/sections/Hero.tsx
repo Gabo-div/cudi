@@ -17,18 +17,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 flex w-full flex-col px-2 py-4">
-        <div className="container mx-auto flex flex-col">
-          <div className="flex items-center justify-between gap-4">
-            <Citium className="w-44 fill-chetwode-500" />
-            <Citium className="w-44 fill-chetwode-500" />
-            <Citium className="w-44 fill-chetwode-500" />
-            <Citium className="w-44 fill-chetwode-500" />
-            <Citium className="w-44 fill-chetwode-500" />
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

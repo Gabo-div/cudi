@@ -1,5 +1,4 @@
 import Logo from "@/components/svg/logo";
-import Citium from "../svg/citium";
 
 export default function Hero() {
   return (

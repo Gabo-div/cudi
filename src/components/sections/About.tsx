@@ -11,16 +11,33 @@ export default function About({ children }: Props) {
       <div className="flex w-full flex-wrap">
         <div className="flex w-full flex-col p-4 lg:w-1/2">
           <h1 className="mb-4 text-6xl font-bold">Nosotros</h1>
-          <p className="leading-loose">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-            ligula massa, varius a, semper congue, euismod non, mi. Proin
-            porttitor, orci nec nonummy molestie, enim est eleifend mi, non
-            fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
-            scelerisque vitae, consequat in, pretium at, ligula. Suspendisse
-            aliquet, sem ut cursus luctus, ipsum leo
-          </p>
+          <div className="space-y-6">
+            <p className="leading-loose">
+              Comunidad Universitaria Desarrollo e Innovación (CUDI) Nace con la
+              finalidad de ser un espacio dirigido por estudiantes para
+              contribuir en los procesos de formación y difusión en el área de
+              la informática para estudiantes de la UNEG de Ingeniería en
+              Informática y de otras carreras en general a quienes les llame la
+              atención la programación en cada una de sus ramas y compartir sus
+              experiencias y conocimientos mediante actividades socioculturales
+              en el ámbito tecnológico.
+            </p>
+            <p className="leading-loose">
+              La misión de CUDI es brindar herramientas y oportunidades a
+              estudiantes universitarios de la UNEG en el área de la tecnología
+              u otras, fomentando así la participación activa y colectiva de los
+              mismos en su comunidad.
+            </p>
+            <p className="leading-loose">
+              La visión es alcanzar el reconocimiento y participación activa de
+              los estudiantes universitarios de la UNEG, creando espacios para
+              discutir temas de interés en la actualidad en el ámbito
+              tecnológico, actividades de formación y retos de desarrollo e
+              innovación. Alcanzando un impacto no solo en los estudiantes de la
+              UNEG si no en todos los interesados de la comunidad universitaria
+              de Ciudad Guayana.
+            </p>
+          </div>
         </div>
         <div className="flex w-full flex-col p-4 lg:w-1/2">
           <div className="mx-auto rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30">

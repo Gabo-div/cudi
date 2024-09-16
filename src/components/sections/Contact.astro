@@ -1,6 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import aboutImage from "@/assets/about.jpeg";
+
+import { Instagram } from "lucide-react";
+
+import ContactForm from "@/components/sections/ContactForm.tsx";
 ---
 
 <section
@@ -8,44 +12,36 @@ import aboutImage from "@/assets/about.jpeg";
   class="container mx-auto mb-40 flex min-h-screen max-w-6xl items-center px-2 py-32"
 >
   <div class="flex w-full flex-wrap">
-    <div class="flex w-full flex-col p-4 lg:w-1/2">
-      <h1 class="mb-4 text-6xl font-bold">Nosotros</h1>
+    <div class="flex flex-col p-4 lg:w-1/2">
+      <h1 class="mb-4 text-6xl font-bold">Contacto</h1>
       <div class="space-y-6">
         <p class="leading-loose">
-          Comunidad Universitaria Desarrollo e Innovación (CUDI) Nace con la
-          finalidad de ser un espacio dirigido por estudiantes para contribuir
-          en los procesos de formación y difusión en el área de la informática
-          para estudiantes de la UNEG de Ingeniería en Informática y de otras
-          carreras en general a quienes les llame la atención la programación en
-          cada una de sus ramas y compartir sus experiencias y conocimientos
-          mediante actividades socioculturales en el ámbito tecnológico.
+          Estamos en constante búsqueda de alianzas estratégicas y
+          patrocinadores que compartan nuestra visión de impulsar el talento
+          joven y fomentar el desarrollo tecnológico. Si estás interesado en
+          colaborar con nosotros o deseas más información sobre nuestras
+          actividades, no dudes en completar el formulario a continuación.
+          También puedes seguirnos en nuestras redes sociales para estar al
+          tanto de nuestras últimas novedades y eventos.
         </p>
-        <p class="leading-loose">
-          La misión de CUDI es brindar herramientas y oportunidades a
-          estudiantes universitarios de la UNEG en el área de la tecnología u
-          otras, fomentando así la participación activa y colectiva de los
-          mismos en su comunidad.
+        <p class="font-bold leading-loose text-chetwode-400">
+          ¡Esperamos con interés tu mensaje!
         </p>
-        <p class="leading-loose">
-          La visión es alcanzar el reconocimiento y participación activa de los
-          estudiantes universitarios de la UNEG, creando espacios para discutir
-          temas de interés en la actualidad en el ámbito tecnológico,
-          actividades de formación y retos de desarrollo e innovación.
-          Alcanzando un impacto no solo en los estudiantes de la UNEG si no en
-          todos los interesados de la comunidad universitaria de Ciudad Guayana.
-        </p>
+      </div>
+      <div class="mt-6 flex items-center space-x-4">
+        <a
+          class="flex rounded-full border border-neutral-700 bg-neutral-950 p-3 text-neutral-500 transition-all hover:bg-chetwode-950/20 hover:text-chetwode-600"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/cudiuneg_"
+          aria-label="Instagram"
+        >
+          <Instagram className="size-6" />
+        </a>
       </div>
     </div>
     <div class="flex w-full flex-col p-4 lg:w-1/2">
-      <div
-        class="mx-auto rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30"
-      >
-        <Image
-          src={aboutImage}
-          alt="About"
-          class="drop-shadow-[16px 16px 10px black)] h-[700px] rounded-lg object-cover mix-blend-multiply grayscale"
-        />
-      </div>
+      <ContactForm client:load />
     </div>
   </div>
 </section>

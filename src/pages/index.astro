@@ -1,14 +1,13 @@
 ---
 import "@/styles/global.css";
 import Layout from "../layouts/Layout.astro";
-import PointerGradient from "@/components/PointerGradient";
-import Hero from "@/components/sections/Hero";
-import Navbar from "@/components/sections/Navbar";
-import About from "@/components/sections/About";
-import Footer from "@/components/sections/Footer";
+import Hero from "@/components/sections/Hero.astro";
+import Navbar from "@/components/sections/Navbar.astro";
+import About from "@/components/sections/About.astro";
+import Contact from "@/components/sections/Contact.astro";
+import Footer from "@/components/sections/Footer.astro";
 
-import { Image } from "astro:assets";
-import aboutImage from "@/assets/about.jpeg";
+import PointerGradient from "@/components/PointerGradient.tsx";
 ---
 
 <Layout>
@@ -20,13 +19,8 @@ import aboutImage from "@/assets/about.jpeg";
     <PointerGradient client:load />
     <Navbar />
     <Hero />
-    <About>
-      <Image
-        src={aboutImage}
-        alt="About"
-        class="drop-shadow-[16px 16px 10px black)] h-[700px] rounded-lg object-cover mix-blend-multiply grayscale"
-      />
-    </About>
+    <About />
+    <Contact />
     <Footer />
   </main>
 </Layout>

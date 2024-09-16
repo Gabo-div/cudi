@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import aboutImage from "@/assets/about.jpeg";
+
+import Logo from "@/components/svg/logo.astro";
 ---
 
 <section
@@ -38,13 +40,9 @@ import aboutImage from "@/assets/about.jpeg";
     </div>
     <div class="flex w-full flex-col p-4 lg:w-1/2">
       <div
-        class="mx-auto rounded-lg bg-[#7881c6] shadow-md shadow-chetwode-600/30"
+        class="mx-auto flex h-[700px] w-full items-center justify-center rounded-lg bg-chetwode-950/40 fill-chetwode-100 shadow-md"
       >
-        <Image
-          src={aboutImage}
-          alt="About"
-          class="drop-shadow-[16px 16px 10px black)] h-[700px] rounded-lg object-cover mix-blend-multiply grayscale"
-        />
+        <Logo class="size-32" />
       </div>
     </div>
   </div>

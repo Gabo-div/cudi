@@ -1,8 +1,6 @@
 ---
-import { Image } from "astro:assets";
-import aboutImage from "@/assets/about.jpeg";
-
 import { Instagram } from "lucide-react";
+import Discord from "@/components/svg/discord.astro";
 
 import ContactForm from "@/components/sections/ContactForm.tsx";
 ---
@@ -37,6 +35,15 @@ import ContactForm from "@/components/sections/ContactForm.tsx";
           aria-label="Instagram"
         >
           <Instagram className="size-6" />
+        </a>
+        <a
+          class="flex rounded-full border border-neutral-700 bg-neutral-950 fill-neutral-500 p-3 transition-all hover:bg-chetwode-950/20 hover:fill-chetwode-600"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://discord.gg/7RuXAYkJHK"
+          aria-label="Instagram"
+        >
+          <Discord class="size-6" />
         </a>
       </div>
     </div>

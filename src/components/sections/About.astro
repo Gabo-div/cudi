@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import aboutImage from "@/assets/about.jpeg";
-
-import Logo from "@/components/svg/logo.astro";
+import aboutImage from "@/assets/about.png";
 ---
 
 <section
@@ -10,7 +8,7 @@ import Logo from "@/components/svg/logo.astro";
   class="container mx-auto mb-40 flex min-h-screen max-w-6xl items-center px-2 py-32"
 >
   <div class="flex w-full flex-wrap">
-    <div class="flex w-full flex-col p-4 lg:w-1/2">
+    <div class="flex w-full flex-col p-4">
       <h1 class="mb-4 text-6xl font-bold">Nosotros</h1>
       <div class="space-y-6">
         <p class="leading-loose">
@@ -38,11 +36,13 @@ import Logo from "@/components/svg/logo.astro";
         </p>
       </div>
     </div>
-    <div class="flex w-full flex-col p-4 lg:w-1/2">
-      <div
-        class="mx-auto flex h-[700px] w-full items-center justify-center rounded-lg bg-chetwode-950/40 fill-chetwode-100 shadow-md"
-      >
-        <Logo class="size-32" />
+    <div class="flex w-full flex-col p-4">
+      <div class="max-h-[650px] rounded-lg bg-chetwode-600">
+        <Image
+          src={aboutImage}
+          alt="About"
+          class="h-full w-full rounded-lg object-cover object-bottom mix-blend-multiply grayscale"
+        />
       </div>
     </div>
   </div>
